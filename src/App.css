@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  position: relative;
+}
+.navlink{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+  padding: 1em 2em;
+  align-items: center;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+ul li{
+  list-style-type: none;
+}
+.Link{
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+}
+.control{
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .control{
+    display: block;
+    cursor: pointer;
+  }
+  ul{
+    display: none;
+  }
+  .nav-data{
+    display: block;
+    position: fixed;
+    background-color: red;
+    top: 69px;
+    right: 0px;
+    width: 350px;
+    height: 100vh;
+  }
+  .nav-data li{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .toggle{
+    right: -300px;
+  }
+}
